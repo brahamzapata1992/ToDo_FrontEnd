@@ -30,14 +30,7 @@
     animation: bounce 1s infinite;
 }
 
-.input_form{
-    margin-top: 12%;
-    border-radius: 15px;
-    border-color: rgba(9, 9, 9, 0.371);
-    text-align: center;
-    width: 50vw;
-    height: 5vh;
-}
+
 
 /* inicio estilos de imagenes */
 
@@ -67,9 +60,33 @@
 
 /* fin estilos de imagenes */
 
+.botton_form {
+    margin-top: 10%;
+    width: 40%;
+    height: 40px; 
+    border-radius: 20px;
+    background-color: #efa410; 
+    color: rgb(7, 6, 6);
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); 
+}
 
 
+.botton_form:hover {
+    background-color: #edac2b;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px); 
+}
 
+
+.botton_form:active {
+    transform: scale(0.98); 
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2); 
+}
 
 
 
@@ -96,18 +113,47 @@
         margin-top: 15%;
         
     }
+    .input_form{
+        margin-top: 12%;
+        border-radius: 15px;
+        border-color: rgba(9, 9, 9, 0.371);
+        text-align: center;
+        width: 50vw;
+        height: 5vh;
+    }
     
 }
 
 @media (min-width: 600px) and (max-width: 1024px){
     .Container_principal{
-        height: 89.5vh;
+        height: 94.4vh;
+        padding-top: 8%;
+    }
+    .Container_formulario{
+        height: 85%;
     }
     .title_form{
-        font-size: 28px;
-        
+        font-size: 35px;
+        margin-top: 5%;        
     }
     .titulo_app{
         font-size: 55px;
+        padding-bottom: 4%;
     }
+    .input_form{
+        margin-top: 5%;
+        border-radius: 15px;
+        border-color: rgba(9, 9, 9, 0.371);
+        text-align: center;
+        width: 30vw; 
+        height: 6%;
+        font-size: 25px;       
+    }
+    .botton_form{
+        margin-top: 2%;
+        width: 40%;
+        height: 50px;
+        font-size: 30px; 
+    }
+
 }

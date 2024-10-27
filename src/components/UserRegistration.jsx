@@ -15,8 +15,7 @@ import './UserRegistration.css';
 const UserRegistration = () => {
   const [name, setName] = useState('');
   const navigate = useNavigate();
-
-  // Mover la declaración de images fuera de handleRegister
+ 
   const images = [
     av1,
     av2,
@@ -64,7 +63,7 @@ const UserRegistration = () => {
             </div>
           ))}
         </div>
-        <button className='botton_form' onClick={handleRegister}>Registrar</button>
+        <button className='botton_form' onClick={handleRegister}>Register</button>
       </div>
     </div>
   );
