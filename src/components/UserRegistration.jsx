@@ -24,8 +24,8 @@ const UserRegistration = () => {
   };
 
   return (
-    <div>
-        <div className='Container_principal'>
+    <div className='Container_principal'>
+        <div className='Container_formulario'>
             <h2>Registro de Usuario</h2>
              <input
                 type="text"
@@ -34,7 +34,8 @@ const UserRegistration = () => {
                 onChange={(e) => setName(e.target.value)}
             />
             <button onClick={handleRegister}>Registrar</button>
-        </div>      
+        </div>
+        <h1>hola</h1>      
     </div>
   );
 };
